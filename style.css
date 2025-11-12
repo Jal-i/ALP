@@ -88,7 +88,7 @@ body {
 .overlay { 
   position: absolute; 
   inset: 0; 
-  background: radial-gradient(circle at center, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%); 
+  background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%); 
   z-index: 2; 
 }
 
@@ -100,7 +100,7 @@ h2 { font-family:'Poppins', sans-serif; font-size:2.5rem; color:var(--yellow); m
 
 /* SERVICES */
 .service-container { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:3rem; }
-.card { width:350px; background:var(--gray); border-radius:10px; overflow:hidden; transition:all 0.4s ease; }
+.card { width:230px; background:var(--gray); border-radius:10px; overflow:hidden; transition:all 0.4s ease; }
 .card:hover, .card:focus-within { transform:translateY(-10px); background:var(--yellow); color:var(--black); }
 .card:hover h3, .card:hover p, .card:focus-within h3, .card:focus-within p { color:var(--black); }
 .card-image { height:280px; background-size:cover; background-position:center; }
