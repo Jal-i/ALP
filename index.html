@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Provisión - Servicios de autoelevadores, pallets y logística. Más de 15 años de experiencia brindando soluciones confiables.">
+  <title>La Provisión Autoelevadores</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo"></div>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="menu-btn" aria-label="Abrir menú">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <img src="img/logo.jpg" alt="La Provisión" class="hero-logo">
+  </header>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="about" data-aos="fade-up">
+    <h2>Sobre Nosotros</h2>
+    <div class="line"></div>
+    <p>
+      Con más de 20 años de experiencia en el sector, somos una empresa consolidada en el rubro, especializada en servicios de carga, descarga y operación con autoelevadores.
+      Importamos maquinarias directamente desde fábrica, garantizando equipos de alta calidad, eficiencia y confiabilidad, que además personalizamos según los requerimientos específicos de cada cliente.
+      Contamos con un área dedicada a la venta de repuestos y un servicio técnico integral, asegurando un soporte postventa profesional y la máxima operatividad de cada equipo.
+      Nuestra trayectoria, compromiso y atención personalizada nos posicionan como un referente en soluciones logísticas, destacándonos por la confianza y la excelencia en cada operación.
+    </p>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <h2 data-aos="fade-up">Nuestros Servicios</h2>
+    <div class="line"></div>
+    <div class="service-container">
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card-image img-1"></div>
+        <h3>IMPORTACIÓN DIRECTA DE FÁBRICA</h3>
+        <p>Sin intermediarios, lo que nos permite ofrecer equipos nuevos, de calidad garantizada y precios competitivos.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card-image img-2"></div>
+        <h3>ALQUILER DE AUTOELEVADORES</h3>
+        <p>Alquiler por hora, día o mes. Nuestra prioridad es garantizar un trabajo eficiente y seguro.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card-image img-3"></div>
+        <h3>REPUESTOS Y SERVICIO TÉCNICO</h3>
+        <p>Asistencia profesional, mantenimiento preventivo y reparación de equipos con repuestos garantizados.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="gallery" data-aos="fade-up">
+    <h2>Galería</h2>
+    <div class="line"></div>
+    <div class="gallery-grid">
+      <img src="img/3.jpg" alt="Autoelevador 1">
+      <img src="img/1.jpg" alt="Autoelevador 2">
+      <img src="img/13.jpg" alt="Autoelevador 3">
+      <img src="img/8.jpg" alt="Autoelevador 4">
+      <img src="img/5.jpg" alt="Autoelevador 5">
+      <img src="img/10.jpg" alt="Autoelevador 6">
+      <img src="img/11.jpg" alt="Autoelevador 7">
+      <img src="img/12.jpg" alt="Autoelevador 8">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <div class="line"></div>
+    <p>Comunicate con nosotros y te asesoramos sin compromiso.</p>
+    <div class="social-links">
+      <a href="https://wa.me/5493586011748" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/autoelevadores.laprovision" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:autoelevadores.laprovision@hotmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 La Provisión | Desarrollado por ALP Group</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inicializa AOS
+    AOS.init({ duration: 1000, once: true });
+
+    // Menú responsive + animación icono
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-menu');
+      menuBtn.classList.toggle('active'); // animación X
+    });
+
+    navLinkItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu');
+        menuBtn.classList.remove('active');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      navLinks.classList.remove('mobile-menu');
+      menuBtn.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
