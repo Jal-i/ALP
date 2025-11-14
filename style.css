@@ -78,8 +78,8 @@ body {
 }
 
 .hero-logo { 
-  max-width: 90%;         /* ancho máximo para que no sobresalga */
-  max-height: 80%;        /* altura máxima para no ocupar todo */
+  max-width: 100%;         /* ancho máximo para que no sobresalga */
+  max-height: 100%;        /* altura máxima para no ocupar todo */
   object-fit: contain;    /* mantiene proporción */
   filter: brightness(0.6) drop-shadow(0 0 20px rgba(0,0,0,0.6)); 
   z-index: 1; 
