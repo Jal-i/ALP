@@ -100,11 +100,11 @@ h2 { font-family:'Poppins', sans-serif; font-size:2.5rem; color:var(--yellow); m
 
 /* SERVICES */
 .service-container { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:3rem; }
-.card { width:230px; background:var(--gray); border-radius:10px; overflow:hidden; transition:all 0.4s ease; }
+.card { width:300px; background:var(--gray); border-radius:10px; overflow:hidden; transition:all 0.4s ease; }
 .card:hover, .card:focus-within { transform:translateY(-10px); background:var(--yellow); color:var(--black); }
 .card:hover h3, .card:hover p, .card:focus-within h3, .card:focus-within p { color:var(--black); }
 .card-image { height:280px; background-size:cover; background-position:center; }
-.img-1{background-image:url('img/4.jpg');} .img-2{background-image:url('img/2.jpg');} .img-3{background-image:url('img/9.jpg');}
+.img-1{background-image:url('img/importacion.jpg');} .img-2{background-image:url('img/alquiler.jpg');} .img-3{background-image:url('img/servicio\ tecnico.jpg');}
 .card h3 { font-family:'Poppins', sans-serif; margin:1rem 0; }
 .card p { padding:0 1rem 1.5rem; font-size:0.95rem; line-height:1.5; }
 
